@@ -34,11 +34,16 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 }
 
 .box1 {
-  flex:10 5 400px;
+  xflex:10 5 400px;
+  flex-basis: 400px;
+  flex-grow: 1; /* By default its value is 0 */
+  flex-shrink: 5; /* By default its value is 1. Try to shrink below 800px. Shrink 5 times more than other box */
 }
 
 .box2 {
-  flex:1 1 400px;
+  xflex:1 1 400px;
+  flex-basis: 400px;
+  flex-grow: 1;
 }
 
 

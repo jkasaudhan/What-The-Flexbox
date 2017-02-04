@@ -31,16 +31,32 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display:flex;
+  height: 100vh;
+  border: 10px solid red;
+  xflex-wrap: wrap;
+  xalign-content: center; /* align content stretches the items to fill the container */
+  align-items: center; /* align-items does not stretches the items to fill the container */
 }
 
+/*
 .box {
   flex:1;
 }
-
-.box3 {
-  order:1;
+*/
+.box {
+    width: 33.33%;
 }
-
-.box5 {
-  order:2;
+/*
+.box2 {
+ order: 2;   
+ align-self: flex-end;
 }
+*/
+
+/*
+.box4 {
+    order: 1;
+}
+*/
+
+
